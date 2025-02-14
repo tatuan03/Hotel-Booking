@@ -1,0 +1,99 @@
+.container {
+    margin: 5px;
+    display: block !important;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    height: 10%;
+}
+
+th, td {
+    padding: 5px; /* Giảm padding để giảm chiều cao của hàng */
+    text-align: left;
+}
+
+th {
+    background-color: rgb(51, 51, 51, 0.6); /* Màu nền của tiêu đề bảng */
+    color: black; /* Màu chữ của tiêu đề bảng */
+    font-weight: bold; /* Chữ đậm cho tiêu đề */
+}
+
+tr:nth-child(even) {
+
+}
+
+tr:hover {
+
+}
+
+.active {
+    /* CSS styles cho menu khi nó được chọn */
+    background-color: #f0f0f0; /* Ví dụ: Màu nền khác để làm nổi bật */
+    color: #333; /* Ví dụ: Màu chữ khác */
+    font-weight: bold; /* Ví dụ: Text đậm */
+}
+
+.delete-icon {
+    font-size: 24px; /* Kích thước của biểu tượng */
+}
+
+/* CSS để thiết lập nút xóa */
+.delete-btn {
+    background-color: red; /* Đặt màu nền trong suốt */
+    border: none; /* Loại bỏ viền */
+    cursor: pointer; /* Biến con trỏ thành dạng bấm được */
+    padding: 0; /* Loại bỏ padding */
+    width: 30px; /* Độ rộng của nút */
+    height: 30px; /* Độ cao của nút */
+}
+
+.payment-container {
+    
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #pay-btn {
+    width: 20%;
+    margin: 0 40%;
+    padding: 10px 20px;
+    font-size: 2rem;
+  }
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+    table thead {
+        display: none;
+    }
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid #ddd;
+    }
+    table td {
+        display: block;
+        text-align: center;
+        border: none;
+        position: relative;
+        padding: 5px; /* Giảm padding cho thiết bị di động */
+    }
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+    }
+}

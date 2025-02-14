@@ -1,0 +1,655 @@
+/* CSS cho phần Add Service */
+
+.add-service {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-service .heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.add-service .box {
+    margin-bottom: 20px;
+}
+
+.add-service p {
+    margin: 0;
+}
+
+.add-service span {
+    color: #555;
+}
+
+.add-service input[type="text"],
+.add-service input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.add-service input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-service input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.add-service .error-message {
+    color: red;
+    margin-top: 5px;
+}
+.add-service .box p {
+    margin: 0;
+}
+
+.add-service .box span {
+    color: #555;
+}
+
+.add-service .box p {
+    margin-bottom: 5px;
+}
+
+
+.header-list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    font-size: 2rem;
+}
+.header-list li{
+    padding: 15px 40px;
+    
+}
+.header-list li a{
+    color: black;
+}
+.header-list li:hover{
+    background-color: rgb(85, 85, 85, 0.6);
+    border-radius: 5px;
+}
+.container{
+    height: 90vh;
+    width: 100%;
+    
+    display: flex;
+    
+}
+.form-booking{
+    width: 40%;
+    
+    height: 80vh;
+    margin: 0 auto;
+}
+.services-menu{
+    width: 40%;
+    
+    height: 80vh;
+    margin: 0 auto;
+}
+
+/******form booking******/
+.booking-form form, .custom-service form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label, .custom-service label {
+    margin-bottom: 5px;
+}
+
+.booking-form input, .booking-form textarea, .custom-service input, .custom-service textarea {
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+}
+
+.booking-form button, .custom-service button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.booking-form button:hover, .custom-service button:hover {
+    background-color: #555;
+}
+/************************/
+
+/*****menu***********/
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.8);
+}
+.services-menu h2{
+    text-align: center;
+}
+.services-menu-all{
+    width: 100%;
+    height: 64vh;
+    background-color: lightcoral;
+}
+.menu-all{
+    
+    display: flex;
+    padding: 10px 0;
+}
+.menu-all h3{
+    margin-bottom: 0;
+    line-height: 10vh;
+    
+}
+
+.card{
+    width: 100%;
+    height: 50%;
+    font-size: 1.5rem;
+    color: black;
+}
+.card-body{
+
+}
+.card-body td{
+    height: 100px;
+}
+.services-menu-all ul li:hover{
+    background-color: rgb(85, 85, 85, 0.5);
+    border-radius: 5px;
+}
+.services-menu-list{
+    list-style: none;
+    padding-left: 0;
+    padding: 20px 0;
+}
+.services-menu-list-img{
+    width: 15%;
+    margin: 0 10px 10px;
+    padding: 5px 0;
+    
+}
+.services-menu-list-img img{
+    width: 100%;
+}
+.services-menu-list-content{
+    width: 80%;
+    margin-top: -4%;
+}
+/**********************/
+
+/************request-service*****/
+.request-service-form {
+    margin: 210px 0;
+    width: 80%; /* Độ rộng của form là 80% */
+    margin: 0 auto; /* Để căn giữa form trong khung hình */
+    padding: 20px; /* Thêm một khoảng cách xung quanh form */
+    background-color: #f9f9f9; /* Màu nền của form */
+    border-radius: 8px; /* Bo tròn các góc của form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+}
+
+.request-service-form form {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử bên trong form */
+    flex-direction: column; /* Căn chỉnh các phần tử dọc theo cột */
+}
+
+.request-service-form form .form-group {
+    margin-bottom: 15px; /* Khoảng cách giữa các nhóm input */
+}
+
+.request-service-form form label {
+    font-weight: bold; /* Đậm chữ cho nhãn */
+}
+
+.request-service-form form input[type="text"],
+.request-service-form form input[type="email"],
+.request-service-form form textarea {
+    width: 100%; /* Độ rộng của input và textarea là 100% */
+    padding: 8px; /* Thêm padding cho input và textarea */
+    border: 1px solid #ccc; /* Định dạng đường viền */
+    border-radius: 4px; /* Bo tròn các góc của input và textarea */
+    box-sizing: border-box; /* Kích thước tính cả border và padding */
+}
+
+.request-service-form form button[type="submit"] {
+    width: 100%; /* Độ rộng của nút gửi là 100% */
+    padding: 10px; /* Thêm padding cho nút gửi */
+    border: none; /* Loại bỏ đường viền */
+    border-radius: 4px; /* Bo tròn các góc của nút gửi */
+    background-color: rgb(76, 175, 80); /* Màu nền của nút gửi */
+    color: #fff; /* Màu chữ trắng */
+    cursor: pointer; /* Biến con trỏ thành dấu nhấp chuột khi di chuột qua nút */
+}
+
+.request-service-form form button[type="submit"]:hover {
+    background-color: #45a049; /* Màu nền của nút gửi khi di chuột qua */
+}
+
+
+/******************************
+/************quatity************/
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.quantity-controls button:hover {
+    background-color: #e0e0e0;
+}
+
+.quantity-controls button:first-child {
+    border-radius: 4px 0 0 4px;
+}
+.quantity-controls input{
+    padding: 5px 0;
+    text-align: center;
+}
+.quantity-controls button:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.quantity-controls button {
+    width: 30px;
+}
+
+
+/***********payment***************/
+.payment{
+    width: 100%;
+    margin-top: 30px;
+    height: 5vh;
+    text-align: center;
+}
+.payment-click{
+    height: 100%;
+    width: 20%;
+    margin: 0 auto;
+    background-color: rgb(35, 236, 41, 0.7);
+    
+}
+.payment-click a{
+    line-height: 200%;
+    width: 100%;
+}
+.payment-click:hover{
+    background-color: rgb(2, 158, 10, 0.5);
+}
+/*********************************/
+
+.card-header{
+    width: 100%;
+    text-align: center;
+}
+
+.card-body{
+    width: 100%;
+    
+}
+.card-body table{
+    border-collapse: collapse;
+    width: 100%;
+   
+}
+.card-body th, .card-body td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+
+}
+.card-body table tbody tr{
+    cursor: pointer;
+}
+.selected {
+    background-color: #f0f0f0; /* Màu nền cho hàng đã chọn */
+}
+/* CSS cho danh sách menu */
+.menu-list-all {
+    width: 50%;
+    overflow-x: auto;
+    height: 100%;
+}
+
+.card {
+    margin-bottom: 20px;
+    
+}
+
+
+
+/* CSS cho form thông tin dịch vụ */
+.form-container {
+    width: 40%;
+    padding: 20px;
+    margin: 0 auto;
+    height: 90%;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+/*******page*******/
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 10%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#pagination button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: #4caf50;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pagination button:hover {
+    background-color: #45a049;
+}
+#pagination button {
+    cursor: pointer;
+    margin: 0 5px;
+}
+/*message**/
+/* CSS cho message box */
+.message-box {
+    display: none; /* Ẩn theo mặc định, hiển thị khi cần */
+    background-color: #f9f9f9;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 400px;
+}
+
+.message-box p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.icon-container i {
+    font-size: 50px;
+    color: #4caf50;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.message-button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message-button:hover {
+    background-color: #45a049;
+}
+
+
+
+.custom-message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#customMessageTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.custom-icon-container {
+    margin-bottom: 20px;
+}
+
+.custom-icon-container i {
+    font-size: 48px;
+    color: #4CAF50;
+    animation: pulse 2s infinite alternate; /* Thêm animation vào biểu tượng checked */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.custom-button-container {
+    text-align: center;
+}
+
+.custom-message-button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-message-button:hover {
+    background-color: #45a049;
+}
+/* CSS responsive */
+@media screen and (max-width: 1024px) {
+    
+}
+@media only screen and (max-width: 900px){
+    .container{
+        display: block;
+        height: 150vh;
+    }
+    .form-booking{
+        width: 100%;
+        margin: 50px 0;
+        
+    }
+    .services-menu{
+        width: 100%;
+       
+    }
+    .services-menu-all{
+        width: 100%;
+        height: 100%;
+    }
+    .services-menu-list{
+        
+        width: 100%;
+        height: 100%;
+    }
+    .services-menu-list li{
+        width: 100%;
+        height: auto;
+    }
+    .container{
+        height: 170vh;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-container {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+    }
+
+    table th:nth-child(1),
+    table td:nth-child(1) {
+        display: none;
+    }
+
+    table td:nth-child(3) {
+        width: 50%;
+    }
+
+    .form-group label {
+        font-size: 0.9em;
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 0.9em;
+    }
+    .menu-list-all{
+        width: 100%;
+    }
+
+    
+}
+@media screen and (max-width: 576px){
+    .menu-list-all{
+        width: 100%;
+    }
+    .container{
+        height: 60%;
+    }
+    .form-container{
+        height: 40%;
+    }
+} 
